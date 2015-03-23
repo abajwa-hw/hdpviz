@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>HDPVIZ</name>
+            <displayName>HDP Visualizer</displayName>
+            <comment>View to visualize HDFS and other HDP components using Node.js/D3. Written by: Dave Patton. Ambari service by Ali Bajwa </comment>
+            <version>1.0.6</version>
+            <components>
+                <component>
+                  <name>HDPVIZ_MASTER</name>
+                  <displayName>HDP Visualizer</displayName>
+                  <category>MASTER</category>
+                  <cardinality>1</cardinality>
+                  <commandScript>
+                    <script>scripts/master.py</script>
+                    <scriptType>PYTHON</scriptType>
+                    <timeout>5000</timeout>
+                  </commandScript>
+                </component>
+            </components>
+            <!-- <osSpecifics>
+              <osSpecific>
+                <osFamily>redhat6</osFamily>
+                <packages>
+                   <package><name>nojejs</name></package>  
+                   <package><name>npm</name></package>                                                 
+                </packages>
+              </osSpecific>
+            </osSpecifics> -->
+      	    <configuration-dependencies>
+        	<config-type>hdpviz-config</config-type>
+      	    </configuration-dependencies>
+            <restartRequiredAfterChange>false</restartRequiredAfterChange>
+        </service>
+    </services>
+</metainfo>

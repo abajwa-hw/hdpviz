@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+ 
+<configuration>
+
+
+
+  <property>
+    <name>install.dir</name>
+    <value>/root</value>
+    <description>Local dir where to install component</description>
+  </property> 
+
+  <property>
+    <name>stack.host</name>
+    <value>sandbox.hortonworks.com</value>
+    <description>Hostname where component is installed</description>
+  </property> 
+
+  <property>
+    <name>stack.port</name>
+    <value>9001</value>
+    <description>Port on which Node.js server should server the view</description>
+  </property> 
+  
+  <property>
+    <name>stack.dir</name>
+    <value>/var/lib/ambari-server/resources/stacks/HDP/2.2/services/hdpviz_stack</value>
+    <description>Stack dir from where to run setup/start/stop scripts</description>
+  </property> 
+  
+    
+  <property>
+    <name>stack.log</name>
+    <value>/var/log/hdp-viz.log</value>
+    <description>Log file for component</description>
+  </property> 
+  
+</configuration>
+
