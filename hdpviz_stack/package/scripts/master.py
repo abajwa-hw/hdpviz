@@ -14,7 +14,7 @@ class Master(Script):
     Execute('find '+params.stack_dir+' -iname "*.sh" | xargs chmod +x')
     Execute('echo "Running ' + params.stack_dir + '/package/scripts/setup.sh"')
     
-    # run setup script which has simple shell setup
+    # run setup script and pass in configurations from user
     Execute(params.stack_dir + '/package/scripts/setup.sh '+params.install_dir+' '+str(params.stack_host)+' '+str(params.stack_port)+' >> ' + params.stack_log)
 
 
@@ -23,8 +23,12 @@ class Master(Script):
     env.set_params(params)
 
   def stop(self, env):
-    import params
-    Execute(params.stack_dir + '/package/scripts/stop.sh >> ' + params.stack_log)
+    import status_params
+    env.set_params(status_params)
+    self.configure(env)
+    Execute (format('kill `cat {stack_pidfile}` >/dev/null 2>&1')) 
+    Execute (format("rm -f {stack_pidfile}"))
+    #Execute(params.stack_dir + '/package/scripts/stop.sh >> ' + params.stack_log)
       
   def start(self, env):
     import params
