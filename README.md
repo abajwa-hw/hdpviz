@@ -1,5 +1,5 @@
 #### An Ambari Stack for HDP Visualizer for component services
-Ambari stack for easily installing and managing HDP component services Visualizer on HDP cluster
+Ambari stack/view for easily installing and managing [HDP component services Visualizer](https://github.com/dp1140a/HDP-Viz) on HDP cluster
 
 - Download HDP 2.2 sandbox VM image (Sandbox_HDP_2.2_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
 - Import Sandbox_HDP_2.2_VMware.ova into VMWare and set the VM memory size to 8GB
@@ -61,11 +61,9 @@ On bottom left -> Actions -> Add service -> check HDPVIZ server -> Next -> Next 
 - On successful deployment you will see the HDPVIZ service as part of Ambari stack and will be able to start/stop the service from here:
 ![Image](../master/screenshots/screenshot-vnc-stack.png?raw=true)
 
-- When you've completed the install process, HDPVIZ will appear in Ambari 
-![Image](../master/screenshots/screenshot-freeipa-stack.png?raw=true)
+- When you've completed the install process, HDPVIZ will appear in Ambari. You can see the parameters you configured under 'Configs' tab
+![Image](../master/screenshots/hdpviz-service.png?raw=true)
 
-- You can see the parameters you configured under 'Configs' tab
-![Image](../master/screenshots/screenshot-freeipa-stack-config.png?raw=true)
 
 - To remove the HDPVIZ service: 
   - Stop the service via Ambari
@@ -88,7 +86,7 @@ On bottom left -> Actions -> Add service -> check HDPVIZ server -> Next -> Next 
 - Or open a separate browser tab to the IP of the VM:
 http://192.168.191.142:9001/
 
-
+![Image](../master/screenshots/hdpviz-view.png?raw=true)
 
 
 
