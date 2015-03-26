@@ -1,5 +1,5 @@
 #### An Ambari Stack for HDP Visualizer for component services
-Ambari stack/view for easily installing and managing [HDP component services Visualizer](https://github.com/dp1140a/HDP-Viz), inspired by [Twitter's HDFS du](https://github.com/twitter/hdfs-du) on HDP cluster
+Ambari stack/view for easily installing and managing [HDP Visualizer](https://github.com/dp1140a/HDP-Viz), inspired by [Twitter's HDFS du](https://github.com/twitter/hdfs-du) on HDP cluster
 
 - Download HDP 2.2 sandbox VM image (Sandbox_HDP_2.2_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
 - Import Sandbox_HDP_2.2_VMware.ova into VMWare and set the VM memory size to 8GB
