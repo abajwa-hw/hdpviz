@@ -25,7 +25,7 @@
   
   <property>
     <name>stack.dir</name>
-    <value>/var/lib/ambari-server/resources/stacks/HDP/2.2/services/hdpviz_stack</value>
+    <value>/var/lib/ambari-agent/cache/stacks/HDP/2.2/services/hdpviz_stack</value>
     <description>Stack dir from where to run setup/start/stop scripts</description>
   </property> 
   
